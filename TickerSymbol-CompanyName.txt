@@ -1,0 +1,96 @@
+Ticker Symbol	Company Name
+RELIANCE.NS	Reliance Industries Ltd
+INFY.NS	Infosys Ltd
+HDFCBANK.NS	HDFC Bank Ltd
+TCS.NS	Tata Consultancy Services Ltd
+SBIN.NS	State Bank of India
+ICICIBANK.NS	ICICI Bank Ltd
+HCLTECH.NS	HCL Technologies Ltd
+SUNPHARMA.NS	Sun Pharmaceutical Industries Ltd
+MARUTI.NS	Maruti Suzuki India Ltd
+LT.NS	Larsen & Toubro Ltd
+KOTAKBANK.NS	Kotak Mahindra Bank Ltd
+AXISBANK.NS	Axis Bank Ltd
+ITC.NS	ITC Ltd
+BHARTIARTL.NS	Bharti Airtel Ltd
+BAJFINANCE.NS	Bajaj Finance Ltd
+ASIANPAINT.NS	Asian Paints Ltd
+TITAN.NS	Titan Company Ltd
+ONGC.NS	Oil & Natural Gas Corporation Ltd
+ULTRACEMCO.NS	UltraTech Cement Ltd
+DRREDDY.NS	Dr. Reddy’s Laboratories Ltd
+DIVISLAB.NS	Divi’s Laboratories Ltd
+BAJAJ-AUTO.NS	Bajaj Auto Ltd
+WIPRO.NS	Wipro Ltd
+GRASIM.NS	Grasim Industries Ltd
+POWERGRID.NS	Power Grid Corporation Ltd
+NTPC.NS	NTPC Ltd
+HINDUNILVR.NS	Hindustan Unilever Ltd
+JSWSTEEL.NS	JSW Steel Ltd
+TATAMOTORS.NS	Tata Motors Ltd
+UPL.NS	UPL Ltd
+INDUSINDBK.NS	IndusInd Bank Ltd
+ADANIGREEN.NS	Adani Green Energy Ltd
+ADANIPORTS.NS	Adani Ports & SEZ Ltd
+ADANIPOWER.NS	Adani Power Ltd
+ADANIENT.NS	Adani Enterprises Ltd
+ADANITRANS.NS	Adani Transmission Ltd
+TATACHEM.NS	Tata Chemicals Ltd
+TATACONSUM.NS	Tata Consumer Products Ltd
+TATASTEEL.NS	Tata Steel Ltd
+TATAELXSI.NS	Tata Elxsi Ltd
+VOLTAS.NS	Voltas Ltd
+ZEEL.NS	Zee Entertainment Enterprises Ltd
+PIDILITIND.NS	Pidilite Industries Ltd
+M&M.NS	Mahindra & Mahindra Ltd
+DLF.NS	DLF Ltd
+GAIL.NS	GAIL (India) Ltd
+AMBUJACEM.NS	Ambuja Cements Ltd
+SHREECEM.NS	Shree Cement Ltd
+HEROMOTOCO.NS	Hero MotoCorp Ltd
+BAJAJFINSV.NS	Bajaj Finserv Ltd
+BRITANNIA.NS	Britannia Industries Ltd
+CIPLA.NS	Cipla Ltd
+COALINDIA.NS	Coal India Ltd
+EICHERMOT.NS	Eicher Motors Ltd
+HAVELLS.NS	Havells India Ltd
+HDFCLIFE.NS	HDFC Life Insurance Company Ltd
+ICICIPRULI.NS	ICICI Prudential Life Ins. Co. Ltd
+IOC.NS	Indian Oil Corporation Ltd
+SBILIFE.NS	SBI Life Insurance Company Ltd
+LTIM.NS	LTIMindtree Ltd
+NESTLEIND.NS	Nestle India Ltd
+LUPIN.NS	Lupin Ltd
+SIEMENS.NS	Siemens Ltd
+SRF.NS	SRF Ltd
+TORNTPHARM.NS	Torrent Pharmaceuticals Ltd
+MINDTREE.NS	Mindtree Ltd
+NAUKRI.NS	Info Edge (India) Ltd
+MPHASIS.NS	Mphasis Ltd
+METROPOLIS.NS	Metropolis Healthcare Ltd
+PAYTM.NS	One 97 Communications Ltd (Paytm)
+NYKAA.NS	FSN E-Commerce Ventures Ltd (Nykaa)
+DMART.NS	Avenue Supermarts Ltd (DMart)
+POLYCAB.NS	Polycab India Ltd
+APOLLOTYRE.NS	Apollo Tyres Ltd
+MUTHOOTFIN.NS	Muthoot Finance Ltd
+ABCAPITAL.NS	Aditya Birla Capital Ltd
+INDIGO.NS	InterGlobe Aviation Ltd (Indigo)
+LAURUSLABS.NS	Laurus Labs Ltd
+HAL.NS	Hindustan Aeronautics Ltd
+IRCTC.NS	Indian Railway Catering & Tourism
+IRFC.NS	Indian Railway Finance Corporation
+IDFCFIRSTB.NS	IDFC FIRST Bank Ltd
+JUBLFOOD.NS	Jubilant FoodWorks Ltd
+NMDC.NS	NMDC Ltd
+OIL.NS	Oil India Ltd
+PFC.NS	Power Finance Corporation Ltd
+PNB.NS	Punjab National Bank
+RBLBANK.NS	RBL Bank Ltd
+SAIL.NS	Steel Authority of India Ltd
+TVSMOTOR.NS	TVS Motor Company Ltd
+SUNTV.NS	Sun TV Network Ltd
+TRENT.NS	Trent Ltd
+UNIONBANK.NS	Union Bank of India
+YESBANK.NS	Yes Bank Ltd
+ZOMATO.NS	Zomato Ltd

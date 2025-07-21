@@ -1,0 +1,98 @@
+import tkinter as tk
+from tkinter import messagebox
+import yfinance as yf
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import mplcursors  # For interactive cursors
+
+# Function to fetch and process stock data
+def fetch_stock_data(ticker, start, end):
+    try:
+        stock = yf.download(ticker, start=start, end=end) #if data found will be stored in variable
+        if stock.empty:
+            messagebox.showerror("Error", "No data found for the given inputs.")
+        return stock
+    except Exception as e:
+        messagebox.showerror("Error", f"Error fetching data: {e}")
+
+# Function to add averages to the data
+def add_averages(stock_data, short_window=20, long_window=50):
+    stock_data['SA20'] = stock_data['Close'].rolling(window=short_window).mean()
+    stock_data['SA50'] = stock_data['Close'].rolling(window=long_window).mean()
+    return stock_data
+
+# Function to plot stock data with interactivity
+def plot_stock_data(stock_data, ticker):
+    # Clear the previous plot if it exists
+    for widget in graph_frame.winfo_children():
+        widget.destroy()
+    
+    fig, ax = plt.subplots(figsize=(12,5))
+    ax.plot(stock_data['Close'], label=f'{ticker} Close Price', color='blue')
+    ax.plot(stock_data['SA20'], label='20-Day SA', color='green')
+    ax.plot(stock_data['SA50'], label='50-Day SA', color='red')
+    ax.set_title(f'{ticker} Stock Price with Moving Averages')
+    ax.set_xlabel('Date')
+    ax.set_ylabel('Price')
+    ax.legend()
+
+    # Adding interactive cursors
+    cursor = mplcursors.cursor(ax, hover=True)
+    cursor.connect("add", lambda sel: sel.annotation.set_text(f"{sel.target[1]:.2f}"))
+
+    # Embedding the plot in the fixed graph_frame
+    canvas = FigureCanvasTkAgg(fig, master=graph_frame)
+    canvas.draw()
+    canvas.get_tk_widget().pack(fill=tk.BOTH, expand=True)
+    
+# Main function to analyze stock data
+def stock_analyzer():
+    ticker = ticker_entry.get().upper()
+    start_date = start_entry.get()
+    end_date = end_entry.get()
+
+    #validation for alll fields
+    if not ticker or not start_date or not end_date:
+        messagebox.showwarning("Input Error", "Please fill all fields.")
+        return
+
+    # Fetch and process stock data
+    stock_data = fetch_stock_data(ticker, start_date, end_date)
+    if stock_data is not None:
+        stock_data = add_averages(stock_data)
+        plot_stock_data(stock_data, ticker)
+
+# Tkinter window setup
+window = tk.Tk()
+window.title("Stock Price Analyzer")
+window.geometry("1200x700")
+window.minsize(1200, 700) 
+window.maxsize(1200, 700)
+
+# Stock ticker input
+tk.Label(window, text="Stock Ticker:").grid(row=0, column=0, padx=10, pady=10)
+ticker_entry = tk.Entry(window)
+ticker_entry.grid(row=0, column=1, padx=10, pady=0)
+
+
+# Start date input
+tk.Label(window, text="Start Date (YYYY-MM-DD):").grid(row=1, column=0, padx=10, pady=10)
+start_entry = tk.Entry(window)
+start_entry.grid(row=1, column=1, padx=10, pady=10)
+
+# End date input
+tk.Label(window, text="End Date (YYYY-MM-DD):").grid(row=2, column=0, padx=10, pady=10)
+end_entry = tk.Entry(window)
+end_entry.grid(row=2, column=1, padx=10, pady=10)
+
+# Analyze button
+analyze_button = tk.Button(window, text="Analyze Stock", command=stock_analyzer)
+analyze_button.grid(row=3, column=0, columnspan=2, pady=20)
+
+# Fixed frame for the graph
+graph_frame = tk.Frame(window, width=1200, height=550, bg="#f6f8d0" )
+graph_frame.grid(row=4, column=0, columnspan=3, padx=0, pady=0)
+graph_frame.grid_propagate(False)  # Prevent the frame from resizing with the plot
+
+window.mainloop()
